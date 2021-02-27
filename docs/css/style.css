@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    word-break: keep-all;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+header {
+    font-weight: bold;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.h-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-list li {
+    padding: 0 1vw;
+    font-size: 1.2rem;
+}
+
+.top-wrapper {
+    background-image: url(../img/main-visual-nontitle.png);
+    background-size: cover;
+    text-align: center;
+    padding: 8vw 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+    padding: 2vw 0;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    word-break: break-word;
+}
+
+.title {
+    margin: 1.5em 0;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.content-wrapper {
+    display: grid;
+    gap: 5vw;
+}
+
+.content-wrapper.about {
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-wrapper img {
+    width: 100%;
+}
+
+.content-wrapper p {
+    font-weight: normal;
+}
+
+.content-wrapper.courses {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content {
+    margin: 2vw 0;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content p {
+    margin: 0;
+}
+
+.contact div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+input.email {
+    border: 2px solid lightgray;
+    padding: 1em;
+    width: 50vw;
+    border-radius: 2em;
+}
+
+input.email:focus-visible {
+    border: 2px solid white;
+    box-shadow: 0 0 4px 0 lightcoral;
+}
+
+input.submit {
+    padding: 0.8em 5em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #ec6d64;
+    color: white;
+    border: 0px solid white;
+    max-width: 90vw;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid wheat;
+    font-weight: normal;
+    font-size: 0.5rem;
+    text-align: right;
+    padding: 1.5em 0;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 80%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .h-logo {
+        font-size: 1.5rem;
+    }
+
+    .h-list li {
+        font-size: 0.8rem;
+    }
+
+    .container h1 {
+        font-weight: bolder;
+    }
+
+    .content-wrapper.about {
+        grid-template-columns: 1fr;
+    }
+
+    .content-wrapper.courses {
+        grid-template-columns: 1fr;
+    }
+
+    input.email {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
